@@ -442,7 +442,7 @@ class AjaxEquipos {
 	=============================================*/	
  
 	public $validarSerieE;
- 
+
 	public function ajaxValidarEquipo(){
 
 		$item = "serie";

@@ -67,6 +67,53 @@ class ModeloMantenimiento
 	}
 
 
+    	//Esta Funcion es para crear el excel al usuario x año
+static public function mdlMostrarMantenimientoExcelUsuarios($tabla, $item, $valor, $orden,$perfil,$select52,$valor52){
+
+		if($item != null){ 
+
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+
+			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+ 
+			$stmt -> execute();
+
+			return $stmt -> fetch();
+
+		}else if ($perfil != null) {
+
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $perfil = :$perfil AND $select52 = :$select52");
+
+			$stmt -> bindParam(":".$perfil, $valor, PDO::PARAM_STR);
+			$stmt -> bindParam(":".$select52, $valor52, PDO::PARAM_STR);
+ 
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+		}
+		else if($orden != null){
+
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $orden DESC");
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+
+		}
+		else
+		{
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+		}
+
+		$stmt -> close();
+
+		$stmt = null;
+
+}
 
 
 
@@ -177,54 +224,6 @@ class ModeloMantenimiento
 			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $perfil = :$perfil");
 
 			$stmt -> bindParam(":".$perfil, $valor, PDO::PARAM_STR);
- 
-			$stmt -> execute();
-
-			return $stmt -> fetchAll();
-		}
-		else if($orden != null){
-
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla ORDER BY $orden DESC");
-
-			$stmt -> execute();
-
-			return $stmt -> fetchAll();
-
-		}
-		else
-		{
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
-
-			$stmt -> execute();
-
-			return $stmt -> fetchAll();
-		}
-
-		$stmt -> close();
-
-		$stmt = null;
-
-}
-
-	//Esta Funcion es para crear el excel al usuario x año
-static public function mdlMostrarMantenimientoExcelUsuarios($tabla, $item, $valor, $orden,$perfil,$select52,$valor52){
-
-		if($item != null){ 
-
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
-
-			$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
- 
-			$stmt -> execute();
-
-			return $stmt -> fetch();
-
-		}else if ($perfil != null) {
-
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $perfil = :$perfil AND $select52 = :$select52");
-
-			$stmt -> bindParam(":".$perfil, $valor, PDO::PARAM_STR);
-			$stmt -> bindParam(":".$select52, $valor52, PDO::PARAM_STR);
  
 			$stmt -> execute();
 

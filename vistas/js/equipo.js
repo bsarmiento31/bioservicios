@@ -155,7 +155,7 @@ $("#nuevoSerieE").change(function(){
 
   var serie = $(this).val();
 
-  var datos = new FormData(); 
+  var datos = new FormData();
   datos.append("validarSerieE", serie);
 
    $.ajax({
@@ -395,7 +395,6 @@ $("#codigoEstado").change(function(){
 
   })
 })
-
 
 
 /*=============================================

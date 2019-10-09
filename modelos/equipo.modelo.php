@@ -10,7 +10,7 @@ class ModeloEquipos{
 
 	static public function mdlIngresarEquipo($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(id_usuario,equipo, modelo, serie,	marcaText, baja,instr_utilizados, traba_realizados,mediciones,codigo) VALUES (:id_usuario, :equipo, :modelo, :serie, :marcaText, :baja, :instr_utilizados, :traba_realizados,:mediciones,:codigo)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(id_usuario,equipo, modelo, serie,	marcaText, baja,mediciones,codigo) VALUES (:id_usuario, :equipo, :modelo, :serie, :marcaText, :baja,:mediciones,:codigo)");
 
 		//var_dump($stmt);
 
@@ -20,8 +20,8 @@ class ModeloEquipos{
 		$stmt->bindParam(":serie", $datos["serie"], PDO::PARAM_STR);
 		$stmt->bindParam(":marcaText", $datos["marcaText"], PDO::PARAM_STR);
 		$stmt->bindParam(":baja", $datos["baja"], PDO::PARAM_STR);
-		$stmt->bindParam(":instr_utilizados", $datos["instr_utilizados"], PDO::PARAM_STR);
-		$stmt->bindParam(":traba_realizados", $datos["traba_realizados"], PDO::PARAM_STR);
+		//$stmt->bindParam(":instr_utilizados", $datos["instr_utilizados"], PDO::PARAM_STR);
+		//$stmt->bindParam(":traba_realizados", $datos["traba_realizados"], PDO::PARAM_STR);
 		$stmt->bindParam(":mediciones", $datos["mediciones"], PDO::PARAM_STR);
 		$stmt->bindParam(":codigo", $datos["codigo"], PDO::PARAM_STR);
 

@@ -1,10 +1,10 @@
 <div class="content-wrapper">
   <section class="content-header">
       
-    <h1>   
+    <h1>  
        
     Equipos  
-           
+          
     </h1> 
     <ol class="breadcrumb">
        
@@ -86,7 +86,7 @@
               <!--<th>Instrumentos Utilizados</th>
               <th>Trabajos Realizados</th>-->
               <th>Mediciones</th>
-              <th>Editar Instrumentos y Trabajo</th>
+              <!--<th>Editar Instrumentos y Trabajo</th>-->
               <th>Estado</th>
               <th>Observaciones</th>
               <th>Acciones</th>    
@@ -125,8 +125,7 @@
               <td><button class="btn btn-warning mostrarMediciones" data-toggle="modal" idEquipoMediciones="'.$value["id_equipo"].'" data-target="#modalMostrarMediciones">Mostrar</button></td>';
               
               if($_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Ingeniero"){
-                   echo '
-              <td><button class="btn btn-info btnEditarTrabajosInstrumentos" data-toggle="modal" idEquipoTr="'.$value["id_equipo"].'" data-target="#modalEditarEquiTrabajo"><i class="fa fa-pencil-square-o"></i> Editar</button></td>';
+                   
 
               if($value["baja"] != 0)
                   { 
@@ -386,7 +385,7 @@ MODAL AGREGAR EQUIPO
 
             </div>
 
-                <!-- ENTRADA PARA LA SERIE-->
+                <!-- ENTRADA PARA LA SERIE  id="nuevoSerieE": Este es para validar que la serie no se repita-->
 
              <div class="form-group">
               
@@ -394,7 +393,7 @@ MODAL AGREGAR EQUIPO
               
                 <span class="input-group-addon"><i class="fa fa-align-justify"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="nuevoSerie" id="nuevoSerieE" placeholder="Ingresar la Serie del equipo">
+                <input type="text" class="form-control input-lg" name="nuevoSerie" placeholder="Ingresar la Serie del equipo">
 
               </div>
 
@@ -420,64 +419,64 @@ MODAL AGREGAR EQUIPO
 
             </div> -->
 
-            <div class="form-group">
+            <!--<div class="form-group">-->
 
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
-                <select class="form-control select2" id="instrumentos" name="nuevoInstrumentoE[]" multiple="multiple" data-placeholder="Instrumentos utilizados" style="width: 100%;">
+            <!--  <div class="input-group">-->
+            <!--    <span class="input-group-addon"><i class="fa fa-wrench"></i></span>-->
+            <!--    <select class="form-control select2" id="instrumentos" name="nuevoInstrumentoE[]" multiple="multiple" data-placeholder="Instrumentos utilizados" style="width: 100%;">-->
 
-                <?php
+            <?php
 
-                   $item5 = null;
-                   $valor5 = null;
-                   $orden5 = "id_instrumentos";
+            // <!--       $item5 = null;-->
+            // <!--       $valor5 = null;-->
+            // <!--       $orden5 = "id_instrumentos";-->
 
-                   $instrumentos = controladorInstrumentos::ctrMostrarInstrumentos($item5, $valor5, $orden5);
+            // <!--       $instrumentos = controladorInstrumentos::ctrMostrarInstrumentos($item5, $valor5, $orden5);-->
 
-                   foreach ($instrumentos as $key => $value5) {
-                     echo '<option value="'.$value5["nombre"].'">'.$value5["nombre"].'</option>';
+            // <!--       foreach ($instrumentos as $key => $value5) {-->
+            // <!--         echo '<option value="'.$value5["nombre"].'">'.$value5["nombre"].'</option>';-->
 
-                   }
+            // <!--       }-->
 
                 
-                ?>
+           ?>
 
                
-                </select>
+            <!--    </select>-->
 
-              </div>
-
-
-              </div>
+            <!--  </div>-->
 
 
-          <div class="form-group"> 
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
-                <select class="form-control select2" name="nuevoTrabajosE[]" multiple="multiple" data-placeholder="Trabajos Realizados"
-                        style="width: 100%;">
+            <!--  </div>-->
 
-                  <?php
 
-                   $item = null;
-                   $valor = null;
-                   $orden = "id_trabajo";
+          <!--<div class="form-group"> -->
+          <!--    <div class="input-group">-->
+          <!--      <span class="input-group-addon"><i class="fa fa-wrench"></i></span>-->
+          <!--      <select class="form-control select2" name="nuevoTrabajosE[]" multiple="multiple" data-placeholder="Trabajos Realizados"-->
+          <!--              style="width: 100%;">-->
 
-                   $trabajos = controladorTrabajos::ctrMostrarTrabajos($item, $valor, $orden);
+               <?php
 
-                   foreach ($trabajos as $key => $value) {
-                     echo '<option value="'.$value["nombre"].'">'.$value["nombre"].'</option>';
-                   }
+        //   <!--         $item = null;-->
+        //   <!--         $valor = null;-->
+        //   <!--         $orden = "id_trabajo";-->
+
+        //   <!--         $trabajos = controladorTrabajos::ctrMostrarTrabajos($item, $valor, $orden);-->
+
+        //   <!--         foreach ($trabajos as $key => $value) {-->
+        //   <!--           echo '<option value="'.$value["nombre"].'">'.$value["nombre"].'</option>';-->
+        //   <!--         }-->
                 
-                ?>
+               ?>
 
   
-                </select>
+          <!--      </select>-->
 
-                </div>
+          <!--      </div>-->
 
 
-              </div>
+          <!--    </div>-->
 
 
               <!--Mediciones -->
@@ -701,7 +700,7 @@ MODAL EDITAR EQUIPO
               
                 <span class="input-group-addon"><i class="fa fa-align-justify"></i></span> 
 
-                <input type="text" class="form-control input-lg" id="editarSerie" name="editarSerie" placeholder="Ingresar la Serie del equipo" readonly>
+                <input type="text" class="form-control input-lg" id="editarSerie" name="editarSerie" placeholder="Ingresar la Serie del equipo">
 
               </div>
 

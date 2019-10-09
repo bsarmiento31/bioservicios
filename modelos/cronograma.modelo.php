@@ -2,7 +2,7 @@
 
 require_once "conexion.php"; 
 
-class ModeloCronograma   
+class ModeloCronograma  
 { 
 	static public function mdlCrearCronograma($tabla, $datos)
 	{
@@ -45,6 +45,48 @@ class ModeloCronograma
 		$stmt->close();
 		 
 		$stmt = null;
+	}
+	
+	
+		//Esta Funcion es para crear el excel al usuario x año
+
+	static public function mdlMostrarCronogramaExcelUsuarios($tabla, $item, $valor,$select,$select51,$valor51){
+
+	if($item != null){
+
+		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
+		$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
+
+		$stmt -> execute();
+
+		return $stmt -> fetch();
+
+	}else if($select != null){
+
+		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $select = :$select AND $select51 = :$select51");
+
+		$stmt -> bindParam(":".$select, $valor, PDO::PARAM_STR);
+		$stmt -> bindParam(":".$select51, $valor51, PDO::PARAM_STR);
+
+		$stmt -> execute();
+
+		return $stmt -> fetchAll();
+	}
+	else
+	{
+
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+	}
+		
+
+		$stmt -> close();
+
+		$stmt = null;
+
 	}
 	
 	static public function mdlCrearCronogramaPeriodo($tabla, $datos)
@@ -200,48 +242,6 @@ class ModeloCronograma
 		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $select = :$select");
 
 		$stmt -> bindParam(":".$select, $valor, PDO::PARAM_STR);
-
-		$stmt -> execute();
-
-		return $stmt -> fetchAll();
-	}
-	else
-	{
-
-			$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
-
-			$stmt -> execute();
-
-			return $stmt -> fetchAll();
-	}
-		
-
-		$stmt -> close();
-
-		$stmt = null;
-
-	}
-
-
-	//Esta Funcion es para crear el excel al usuario x año
-
-	static public function mdlMostrarCronogramaExcelUsuarios($tabla, $item, $valor,$select,$select51,$valor51){
-
-	if($item != null){
-
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $item = :$item");
-		$stmt -> bindParam(":".$item, $valor, PDO::PARAM_STR);
-
-		$stmt -> execute();
-
-		return $stmt -> fetch();
-
-	}else if($select != null){
-
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE $select = :$select AND $select51 = :$select51");
-
-		$stmt -> bindParam(":".$select, $valor, PDO::PARAM_STR);
-		$stmt -> bindParam(":".$select51, $valor51, PDO::PARAM_STR);
 
 		$stmt -> execute();
 

@@ -894,14 +894,11 @@
       {
       ?>
       <div class="box-header with-border">
-
-        <?php
+        
+ <?php
        $session = $_SESSION["id"];
         echo ' <a href="vistas/modulos/descargar-reporte.php?reporte14=reporte14&session='.$session.'"><button class="btn btn-success botones">Descargar reporte en Excel</button></a>'
        ?>
-        
-       <!--  <a href="vistas/modulos/descargar-reporte.php?reporte=reporte"><button class="btn btn-success"> Descargar reporte en Excel</button></a> -->
-        
         
         <button type="button" class="btn btn-default" id="daterange-btncronograma">
         <span>
@@ -2296,7 +2293,7 @@ MODAL EDITAR CRONOGRAMA
             <div class="input-group">
               
               <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <input type="text" class="form-control input-lg" name="periodoCodigo" id="periodoCodigo" placeholder="Ingresar el codigo"  readonly>
+              <input type="text" class="form-control input-lg validarSerie2" name="periodoCodigo" id="periodoCodigo" placeholder="Ingresar el codigo"  readonly>
             </div>
           </div>
           <!-- ENTRADA PARA EL EQUIPO -->
@@ -2333,7 +2330,7 @@ MODAL EDITAR CRONOGRAMA
             <div class="input-group">
               
               <span class="input-group-addon"><i class="fa fa-comment"></i></span>
-              <input type="text" class="form-control input-lg validarSerie2" id="periodoSerie" name="periodoSerie" placeholder="Ingresar la serie" readonly>
+              <input type="text" class="form-control input-lg" id="periodoSerie" name="periodoSerie" placeholder="Ingresar la serie" readonly>
             </div>
           </div>
 

@@ -4,8 +4,8 @@
     <h1>
      
     Cronogramas 2019
-      
-    </h1>  
+     
+    </h1> 
     <ol class="breadcrumb">  
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li> 
@@ -20,17 +20,23 @@
         <?php
         if ($_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Ingeniero") {
         ?>
-             <div class="box-header with-border">
+        
+        <div class="box-header with-border">
+          
         
        <!--  <a href="vistas/modulos/descargar-reporte.php?reporte=reporte"><button class="btn btn-success"> Descargar reporte en Excel</button></a> -->
        <?php
 
             $session = null;
-            echo '<div class="col-md-5">
+            echo '<div class="col-md-3">
               <a href="vistas/modulos/descargar-reporte.php?reporte12=reporte12&session='.$session.'"><button class="btn btn-success botones">Descargar reporte en Excel</button></a>
             </div>';
             ?>
-        
+          <button class="btn btn-primary botones" data-toggle="modal" data-target="#modalAgregarCronograma">
+          
+                Agregar cronograma 
+          
+              </button>
         
         <button type="button" class="btn btn-default" id="daterange-btncronograma">
         <span>
@@ -63,7 +69,6 @@
   color: white;
  }
            </style>
-        
   <!--   <h4>Número de filas</h4>
         <div class="row" style="margin-top: 10px;">
           <div class="col-md-4">
@@ -923,7 +928,7 @@
           <i class="fa fa-calendar"></i>Rango de fecha
         </span>
         <i class="fa fa-caret-down"></i>
-        </button> 
+        </button>
         
         <button type="button" class="btn btn-warning cancelarCronograma"><i class="fa fa-times"></i>  Cancelar</button>
         <div class="pull-right">
@@ -1821,7 +1826,6 @@ MODAL AGREGAR CRONOGRAMA
               <select class="form-control input-lg select2 validarSerie" id="nuevoCodigoM" style="width: 100%;" name="nuevoCodigoM" required>
                 <?php
                 
-
                 // $itemMo = null;
                 // $valorMo = null;
                 // $ordenMo="id_equipo";

@@ -13,8 +13,8 @@ class controladorEquipos{
 
 						$tabla = "equipos";
 
-						$instrumento = implode(' # ', $_POST["nuevoInstrumentoE"]);
-						$trabajo = implode(' - ', $_POST["nuevoTrabajosE"]);
+						//$instrumento = implode(' # ', $_POST["nuevoInstrumentoE"]);
+						//$trabajo = implode(' - ', $_POST["nuevoTrabajosE"]);
 
 						$datos = array("equipo"=>$_POST["nuevoEquipo"],
 									   "baja"=>$_POST["nuevoEstado"],
@@ -22,8 +22,6 @@ class controladorEquipos{
 							           "modelo"=>$_POST["nuevoModelo"],
 							           "marcaText"=>$_POST["nuevoMarcaText"],    
 							           "serie"=>$_POST["nuevoSerie"],
-							       	   "instr_utilizados"=>$instrumento,
-							       	   "traba_realizados"=>$trabajo,
 							       	   "codigo"=>$_POST["nuevoCodigo"],
 							       	   "mediciones"=>$_POST["nuevoMedicion"]);
 

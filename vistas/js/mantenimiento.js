@@ -990,7 +990,7 @@ function recargarTrabajos(){
     type: "POST",
     url:"ajax/equipos.ajax.php",
     data: "idTrabajos="+ $('.serieInstrumento').val(),
-    success : function(respuesta){ 
+    success : function(respuesta){
         // console.log("respuesta",respuesta);
         if (respuesta == 0) 
         {

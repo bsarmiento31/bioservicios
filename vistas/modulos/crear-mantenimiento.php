@@ -1,9 +1,9 @@
 <div class="content-wrapper">
   <section class="content-header">
-     
+    
     <h1>  
        
-    Crear manteniemiento       
+    Crear manteniemiento      
             
     </h1>     
     <ol class="breadcrumb">  
@@ -420,7 +420,7 @@
 
                  <input type="hidden" name="nuevoNumero" value="1">
 
-                <!--  <script type="text/javascript">
+                 <script type="text/javascript">
                               $(document).ready(function(){
                                 $('#nuevoSerieM').val();
                                 recargarInstrumentos();
@@ -431,7 +431,7 @@
                                   recargarTrabajos();
                                 });
                               })
-                      </script> -->
+                      </script>
                       <script type="text/javascript">
                               $(document).ready(function(){
                                 $('#nuevoSerieM').val();
@@ -516,13 +516,10 @@
                 </div>
                 <h4>Trabajos Realizados</h4>
           
-                    <!-- <div class="form-group" id="trabajosCargados">      
+                    <!--<div class="form-group" id="trabajosCargados">      
                     
-                    </div> -->
-
-
-
-          <div class="form-group"> 
+                    </div>-->
+                    <div class="form-group"> 
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
                 <select class="form-control select2" name="trabajo[]" multiple="multiple" data-placeholder="Trabajos Realizados"
@@ -552,7 +549,10 @@
 
                 <h4>Nuevos Instrumentos</h4>
 
-                    <div class="form-group">
+                <!--<div class="form-group" id="instrumentosCargados">      
+                    
+                </div>-->
+                 <div class="form-group">
 
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
@@ -581,10 +581,6 @@
 
 
               </div>
-
-                <!-- <div class="form-group" id="instrumentosCargados">      
-                    
-                </div> -->
                 
 
                 <h3 class="box-title">Mediciones</h3>
@@ -884,7 +880,7 @@
             PIE DEL MODAL
             ======================================-->
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary" id="boton">Guardar Mantenimiento</button>
+              <button type="submit" class="btn btn-primary" id="boton" disabled>Guardar Mantenimiento</button>
             </div>
             <?php
             $crearMantenimiento = new ControladorMantenimiento();

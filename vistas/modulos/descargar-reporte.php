@@ -12,7 +12,7 @@ require_once "../../controladores/cronograma.controlador.php";
 require_once "../../modelos/cronograma.modelo.php";
 
  
-  
+ 
  
 
 $reporte = new ControladorMantenimiento();
@@ -38,3 +38,4 @@ $reporteCronograma2020 -> ctrDescargarReporteCronograma2020();
 
 $reporteCronograma2021 = new ControladorCronograma();
 $reporteCronograma2021 -> ctrDescargarReporteCronograma2021();
+

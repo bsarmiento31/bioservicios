@@ -330,9 +330,7 @@ $(document).on("click", ".btnAsignarCronogramaPeriodo", function(){
 
 $(".asignarPeriodoAno").change(function(){
 
-$(".alert").remove(); 
-
-
+$(".alert").remove();
 
   var periodo = $(this).val();
   var serie = $(".validarSerie2").val();
@@ -342,7 +340,7 @@ $(".alert").remove();
 
   var datos = new FormData();
   datos.append("periodo35", periodo);
-  datos.append("serie", serie); 
+  datos.append("serie", serie);
 
     $.ajax({
 
@@ -385,7 +383,7 @@ $(".validarSerie").change(function(){
   // console.log("validar serie",serie);
 
   var datos = new FormData();
-  datos.append("validarSerie", serie); 
+  datos.append("validarSerie", serie);
 
    $.ajax({
       url:"ajax/cronograma.ajax.php",

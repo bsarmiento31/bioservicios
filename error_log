@@ -1,0 +1,385 @@
+[22-Jun-2019 08:23:12 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/conexion.php:9
+Stack trace:
+#0 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/usuarios.modelo.php(15): Conexion::conectar()
+#2 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php(23): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin', NULL)
+#3 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/modulos/login.php(50): ControladorUsuarios::ctrIngresoUsuario()
+#4 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php(192): include('/home2/elkincf/...')
+#5 /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/plantilla.controlador.php(7): include in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/conexion.php on line 9
+[22-Jun-2019 08:28:54 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:28:54 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:00 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:02 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:02 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:10 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:10 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:12 America/Chicago] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:12 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/calibracion.modelo.php:1) in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/plantilla.php on line 3
+[22-Jun-2019 08:29:36 America/Chicago] PHP Fatal error:  Class 'ControladorCalibracion' not found in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/modulos/calibracion.php on line 78
+[22-Jun-2019 08:29:59 America/Chicago] PHP Warning:  require_once(controladores/calibracion.modelo.php): failed to open stream: No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/index.php on line 11
+[22-Jun-2019 08:29:59 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'controladores/calibracion.modelo.php' (include_path='.:/opt/php56/lib/php') in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/index.php on line 11
+[22-Jun-2019 08:30:42 America/Chicago] PHP Warning:  require_once(controladores/calibracion.modelo.php): failed to open stream: No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/index.php on line 11
+[22-Jun-2019 08:30:42 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'controladores/calibracion.modelo.php' (include_path='.:/opt/php56/lib/php') in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/index.php on line 11
+[22-Jun-2019 08:31:59 America/Chicago] PHP Fatal error:  Class 'ModeloCalibracion' not found in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 309
+[22-Jun-2019 08:34:10 America/Chicago] PHP Warning:  unlink(vistas/img/calibracion/11/doc003.pdf): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 328
+[22-Jun-2019 08:34:10 America/Chicago] PHP Warning:  rmdir(vistas/img/calibracion/11): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 329
+[22-Jun-2019 08:34:15 America/Chicago] PHP Warning:  unlink(vistas/img/calibracion/16/doc003.pdf): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 328
+[22-Jun-2019 08:34:15 America/Chicago] PHP Warning:  rmdir(vistas/img/calibracion/16): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 329
+[22-Jun-2019 11:53:15 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 191
+[22-Jun-2019 11:55:30 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 191
+[22-Jun-2019 11:56:37 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 191
+[22-Jun-2019 12:11:39 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 123
+[22-Jun-2019 12:11:39 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 191
+[22-Jun-2019 12:22:04 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[22-Jun-2019 12:24:18 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[22-Jun-2019 12:42:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jun-2019 12:42:54 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[25-Jun-2019 13:50:19 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/modulos/usuarios.php on line 576
+[25-Jun-2019 13:50:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/vistas/modulos/usuarios.php on line 576
+[25-Jun-2019 16:57:13 America/Chicago] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/modelos/cronograma.modelo.php on line 35
+[25-Jun-2019 17:07:10 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1222
+[25-Jun-2019 17:07:18 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1222
+[25-Jun-2019 17:07:24 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1222
+[25-Jun-2019 22:09:50 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 594
+[25-Jun-2019 22:09:50 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 602
+[25-Jun-2019 22:10:10 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 594
+[25-Jun-2019 22:10:10 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 602
+[25-Jun-2019 22:10:10 America/Chicago] PHP Warning:  rmdir(vistas/img/firmas/marktech): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 603
+[25-Jun-2019 22:11:25 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[25-Jun-2019 22:11:25 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[25-Jun-2019 22:21:58 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 594
+[25-Jun-2019 22:22:30 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[25-Jun-2019 22:22:30 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[25-Jun-2019 22:30:10 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/equipos.controlador.php on line 391
+[25-Jun-2019 22:40:52 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[25-Jun-2019 22:57:49 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[26-Jun-2019 16:21:44 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[26-Jun-2019 16:22:25 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jun-2019 13:13:06 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/equipos.controlador.php on line 391
+[27-Jun-2019 13:13:06 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/equipos.controlador.php on line 392
+[28-Jun-2019 08:42:05 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[28-Jun-2019 08:42:05 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[28-Jun-2019 08:42:51 America/Chicago] PHP Warning:  rmdir(vistas/img/firmas/1001): Directory not empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1216
+[28-Jun-2019 08:45:42 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[28-Jun-2019 08:50:08 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[13-Jul-2019 09:24:05 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[13-Jul-2019 09:24:05 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[13-Jul-2019 09:33:06 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[13-Jul-2019 09:33:06 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[13-Jul-2019 09:55:20 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[13-Jul-2019 09:58:54 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/calibracion.controlador.php on line 30
+[13-Jul-2019 10:10:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[13-Jul-2019 10:10:09 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[15-Jul-2019 14:45:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[15-Jul-2019 14:45:56 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[15-Jul-2019 15:45:31 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[15-Jul-2019 15:46:21 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[16-Jul-2019 09:28:03 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[16-Jul-2019 09:36:02 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[16-Jul-2019 09:37:40 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[16-Jul-2019 11:40:37 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[16-Jul-2019 11:40:37 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[16-Jul-2019 11:48:16 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 124
+[16-Jul-2019 11:48:16 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[16-Jul-2019 13:38:25 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 614
+[16-Jul-2019 13:38:33 America/Chicago] PHP Warning:  unlink(): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 614
+[16-Jul-2019 13:38:33 America/Chicago] PHP Warning:  unlink(vistas/img/firmas/defecto/defecto.png): No such file or directory in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 622
+[22-Jul-2019 14:10:07 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[22-Jul-2019 14:10:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:11:16 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[22-Jul-2019 14:11:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:13:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:13:27 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[22-Jul-2019 14:13:45 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[22-Jul-2019 14:13:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:17:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:17:19 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[22-Jul-2019 14:30:20 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[22-Jul-2019 14:30:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[22-Jul-2019 14:31:17 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[22-Jul-2019 14:31:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[23-Jul-2019 14:34:12 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[23-Jul-2019 14:34:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[23-Jul-2019 14:35:28 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[23-Jul-2019 14:37:38 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jul-2019 09:07:28 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jul-2019 09:07:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[27-Jul-2019 09:14:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[27-Jul-2019 09:14:30 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 266
+[27-Jul-2019 09:15:58 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 113
+[27-Jul-2019 09:15:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[27-Jul-2019 09:15:58 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[27-Jul-2019 09:15:58 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 152
+[27-Jul-2019 09:16:29 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jul-2019 09:16:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[27-Jul-2019 09:17:35 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jul-2019 09:17:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[27-Jul-2019 09:19:17 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[27-Jul-2019 09:19:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[29-Jul-2019 10:07:55 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[29-Jul-2019 10:08:44 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[29-Jul-2019 10:58:37 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[31-Jul-2019 12:23:35 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[31-Jul-2019 12:25:04 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[31-Jul-2019 12:30:58 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[31-Jul-2019 13:31:07 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 12:08:44 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/cronograma.controlador.php on line 423
+[06-Aug-2019 12:08:46 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/cronograma.controlador.php on line 423
+[06-Aug-2019 12:09:55 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/cronograma.controlador.php on line 423
+[06-Aug-2019 14:00:33 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 14:05:57 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/usuarios.controlador.php on line 192
+[06-Aug-2019 14:07:51 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 14:08:47 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 14:19:57 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 113
+[06-Aug-2019 14:19:57 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[06-Aug-2019 14:19:57 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 152
+[06-Aug-2019 14:20:35 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 14:27:06 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 113
+[06-Aug-2019 14:27:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[06-Aug-2019 14:27:07 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[06-Aug-2019 14:27:07 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 152
+[06-Aug-2019 14:27:33 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[06-Aug-2019 14:41:14 America/Chicago] PHP Warning:  rmdir(vistas/img/firmas/1010): Directory not empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1216
+[06-Aug-2019 14:41:20 America/Chicago] PHP Warning:  rmdir(vistas/img/firmas/1010): Directory not empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1216
+[06-Aug-2019 14:44:45 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[06-Aug-2019 14:44:46 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 152
+[08-Aug-2019 12:01:58 America/Chicago] PHP Warning:  rmdir(vistas/img/firmas/1003): Directory not empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1216
+[09-Aug-2019 08:49:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[09-Aug-2019 08:50:12 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[09-Aug-2019 08:59:59 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[09-Aug-2019 09:18:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[09-Aug-2019 09:18:55 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[09-Aug-2019 09:22:09 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[09-Aug-2019 19:06:56 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[09-Aug-2019 19:07:16 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[12-Aug-2019 09:19:18 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 1135
+[12-Aug-2019 09:59:17 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[12-Aug-2019 11:36:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[12-Aug-2019 11:36:53 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[12-Aug-2019 11:36:53 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 268
+[12-Aug-2019 11:38:35 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 113
+[12-Aug-2019 11:38:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 35
+[12-Aug-2019 11:38:36 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[12-Aug-2019 11:38:37 America/Chicago] PHP Warning:  mkdir(): File exists in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 152
+[12-Aug-2019 12:00:18 America/Chicago] PHP Warning:  getimagesize(): Filename cannot be empty in /home2/elkincf/public_html/modulos.ingbioservicios.com.co/controladores/mantenimiento.controlador.php on line 139
+[29-Aug-2019 19:32:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/ingbio/public_html/modelos/conexion.php:9
+Stack trace:
+#0 /home/ingbio/public_html/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ingbio/public_html/modelos/usuarios.modelo.php(15): Conexion::conectar()
+#2 /home/ingbio/public_html/controladores/usuarios.controlador.php(23): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin', NULL)
+#3 /home/ingbio/public_html/vistas/modulos/login.php(50): ControladorUsuarios::ctrIngresoUsuario()
+#4 /home/ingbio/public_html/vistas/plantilla.php(195): include('/home/ingbio/pu...')
+#5 /home/ingbio/public_html/controladores/plantilla.controlador.php(7): include('/home/ingbio/pu...')
+#6 /home/ingbio/public_html/index.php(25): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in /home/ingbio/public_html/modelos/conexion.php on line 9
+[29-Aug-2019 19:34:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/ingbio/public_html/app/modelos/conexion.php:9
+Stack trace:
+#0 /home/ingbio/public_html/app/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ingbio/public_html/app/modelos/usuarios.modelo.php(15): Conexion::conectar()
+#2 /home/ingbio/public_html/app/controladores/usuarios.controlador.php(23): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin', NULL)
+#3 /home/ingbio/public_html/app/vistas/modulos/login.php(50): ControladorUsuarios::ctrIngresoUsuario()
+#4 /home/ingbio/public_html/app/vistas/plantilla.php(195): include('/home/ingbio/pu...')
+#5 /home/ingbio/public_html/app/controladores/plantilla.controlador.php(7): include('/home/ingbio/pu...')
+#6 /home/ingbio/public_html/app/index.php(25): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in /home/ingbio/public_html/app/modelos/conexion.php on line 9
+[29-Aug-2019 19:34:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/ingbio/public_html/app/modelos/conexion.php:9
+Stack trace:
+#0 /home/ingbio/public_html/app/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ingbio/public_html/app/modelos/usuarios.modelo.php(15): Conexion::conectar()
+#2 /home/ingbio/public_html/app/controladores/usuarios.controlador.php(23): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin', NULL)
+#3 /home/ingbio/public_html/app/vistas/modulos/login.php(50): ControladorUsuarios::ctrIngresoUsuario()
+#4 /home/ingbio/public_html/app/vistas/plantilla.php(195): include('/home/ingbio/pu...')
+#5 /home/ingbio/public_html/app/controladores/plantilla.controlador.php(7): include('/home/ingbio/pu...')
+#6 /home/ingbio/public_html/app/index.php(25): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in /home/ingbio/public_html/app/modelos/conexion.php on line 9
+[29-Aug-2019 19:36:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/ingbio/public_html/app/modelos/conexion.php:9
+Stack trace:
+#0 /home/ingbio/public_html/app/modelos/conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ingbio/public_html/app/modelos/usuarios.modelo.php(15): Conexion::conectar()
+#2 /home/ingbio/public_html/app/controladores/usuarios.controlador.php(23): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin', NULL)
+#3 /home/ingbio/public_html/app/vistas/modulos/login.php(50): ControladorUsuarios::ctrIngresoUsuario()
+#4 /home/ingbio/public_html/app/vistas/plantilla.php(195): include('/home/ingbio/pu...')
+#5 /home/ingbio/public_html/app/controladores/plantilla.controlador.php(7): include('/home/ingbio/pu...')
+#6 /home/ingbio/public_html/app/index.php(25): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in /home/ingbio/public_html/app/modelos/conexion.php on line 9
+[30-Aug-2019 13:50:40 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 13:51:48 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 13:51:48 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 13:56:38 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 192
+[30-Aug-2019 14:04:05 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 14:04:05 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 14:04:42 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 14:04:42 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 15:00:27 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 15:00:27 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 15:03:14 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 15:03:14 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 15:03:56 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ingbio/public_html/app/modelos/cronograma.modelo.php on line 271
+[30-Aug-2019 15:19:33 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 15:19:33 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 15:48:28 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 15:48:28 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:07:33 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 16:07:33 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:08:59 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 113
+[30-Aug-2019 16:08:59 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:19:02 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 33
+[30-Aug-2019 16:20:32 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 112
+[30-Aug-2019 16:21:19 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:33:19 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:33:41 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1137
+[30-Aug-2019 16:33:41 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:34:05 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1137
+[30-Aug-2019 16:34:05 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 30
+[30-Aug-2019 16:35:42 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1117
+[30-Aug-2019 16:35:42 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:36:40 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1117
+[30-Aug-2019 16:36:40 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:39:21 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1117
+[30-Aug-2019 16:39:21 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:39:59 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1117
+[30-Aug-2019 16:39:59 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:40:34 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1117
+[30-Aug-2019 16:40:34 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 23
+[30-Aug-2019 16:43:17 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1118
+[30-Aug-2019 16:45:16 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1118
+[30-Aug-2019 16:45:17 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 24
+[30-Aug-2019 16:46:42 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1118
+[30-Aug-2019 16:48:58 UTC] PHP Fatal error:  Cannot redeclare sigJsonToImage() (previously declared in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php:3) in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 72
+[30-Aug-2019 16:49:05 UTC] PHP Fatal error:  Cannot redeclare sigJsonToImage() (previously declared in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php:3) in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 72
+[30-Aug-2019 16:49:07 UTC] PHP Fatal error:  Cannot redeclare sigJsonToImage() (previously declared in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php:3) in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 72
+[30-Aug-2019 16:49:20 UTC] PHP Fatal error:  Cannot redeclare sigJsonToImage() (previously declared in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php:3) in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 72
+[30-Aug-2019 16:49:22 UTC] PHP Fatal error:  Cannot redeclare sigJsonToImage() (previously declared in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php:3) in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 72
+[30-Aug-2019 16:49:46 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1118
+[30-Aug-2019 16:49:46 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 24
+[30-Aug-2019 16:50:46 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1148
+[30-Aug-2019 16:50:46 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 54
+[30-Aug-2019 16:51:34 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1148
+[30-Aug-2019 16:51:34 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 54
+[30-Aug-2019 16:51:38 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1148
+[30-Aug-2019 16:51:38 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 30240001 bytes) in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 54
+[30-Aug-2019 16:52:40 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[30-Aug-2019 17:11:56 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 34
+[30-Aug-2019 19:19:47 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[30-Aug-2019 19:39:15 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1058
+[30-Aug-2019 20:02:32 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 13:42:13 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 13:50:51 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 13:50:51 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[31-Aug-2019 13:55:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 13:55:28 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 13:56:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 13:56:18 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 13:59:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 13:59:53 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:16:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 14:16:36 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:16:49 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1058
+[31-Aug-2019 14:16:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 14:21:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 14:21:00 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:30:29 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:30:39 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 14:31:19 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[31-Aug-2019 14:31:37 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[31-Aug-2019 14:31:42 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[31-Aug-2019 14:36:09 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:48:22 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:57:20 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 14:57:20 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 187
+[31-Aug-2019 14:58:23 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[31-Aug-2019 15:13:40 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ingbio/public_html/app/vistas/modulos/equipos.php on line 227
+[31-Aug-2019 15:13:45 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ingbio/public_html/app/vistas/modulos/equipos.php on line 227
+[31-Aug-2019 15:14:37 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ingbio/public_html/app/vistas/modulos/equipos.php on line 227
+[31-Aug-2019 15:14:39 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/ingbio/public_html/app/vistas/modulos/equipos.php on line 227
+[31-Aug-2019 15:30:49 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 15:30:49 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[31-Aug-2019 16:14:01 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 16:14:01 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 187
+[31-Aug-2019 16:15:43 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 16:15:43 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[31-Aug-2019 16:48:58 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 16:49:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[31-Aug-2019 16:50:44 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1057
+[31-Aug-2019 16:53:58 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 16:53:58 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 187
+[31-Aug-2019 16:53:58 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 189
+[31-Aug-2019 16:55:50 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[31-Aug-2019 16:55:50 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[31-Aug-2019 16:56:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[02-Sep-2019 18:06:44 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[02-Sep-2019 18:10:23 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1138
+[02-Sep-2019 18:10:23 UTC] PHP Warning:  rmdir(vistas/img/firmas/1001): No such file or directory in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1139
+[02-Sep-2019 18:19:03 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[02-Sep-2019 18:19:03 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[02-Sep-2019 20:18:49 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:18:54 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:18:54 UTC] PHP Warning:  rmdir(vistas/img/firmas/ClinicaCosta): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 623
+[02-Sep-2019 20:19:00 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:19:00 UTC] PHP Warning:  rmdir(vistas/img/firmas/ClinicaCatalina): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 623
+[02-Sep-2019 20:19:06 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:19:06 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:19:06 UTC] PHP Warning:  rmdir(vistas/img/firmas/ClinicaPrado): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 623
+[02-Sep-2019 20:19:11 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:19:52 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:20:04 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:20:04 UTC] PHP Warning:  unlink(vistas/img/firmas/defecto/defecto.png): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:20:10 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:20:28 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 614
+[02-Sep-2019 20:20:28 UTC] PHP Warning:  unlink(vistas/img/firmas/defecto/defecto.png): No such file or directory in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 622
+[02-Sep-2019 20:34:09 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 124
+[02-Sep-2019 20:34:09 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 192
+[03-Sep-2019 18:40:38 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[03-Sep-2019 20:08:33 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[03-Sep-2019 20:18:15 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[03-Sep-2019 20:24:58 UTC] PHP Warning:  unlink(): No such file or directory in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1138
+[03-Sep-2019 20:24:58 UTC] PHP Warning:  rmdir(vistas/img/firmas/14503): No such file or directory in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1139
+[03-Sep-2019 20:28:52 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[03-Sep-2019 20:28:52 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[04-Sep-2019 15:35:30 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 124
+[04-Sep-2019 15:57:57 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[04-Sep-2019 16:03:49 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[04-Sep-2019 17:44:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[04-Sep-2019 17:53:48 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[04-Sep-2019 17:55:29 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[04-Sep-2019 17:56:08 UTC] PHP Warning:  rmdir(vistas/img/firmas/14507): No such file or directory in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 1140
+[04-Sep-2019 18:04:02 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[04-Sep-2019 18:04:02 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[05-Sep-2019 20:01:44 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[05-Sep-2019 20:01:44 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[05-Sep-2019 22:31:34 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/equipos.controlador.php on line 16
+[05-Sep-2019 22:31:34 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/equipos.controlador.php on line 17
+[06-Sep-2019 14:42:59 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 124
+[06-Sep-2019 14:42:59 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/usuarios.controlador.php on line 192
+[06-Sep-2019 16:38:56 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[06-Sep-2019 16:38:56 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[06-Sep-2019 16:39:57 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[06-Sep-2019 16:39:57 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 14:24:17 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/equipos.controlador.php on line 391
+[09-Sep-2019 14:40:20 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/equipos.controlador.php on line 391
+[09-Sep-2019 17:00:20 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[09-Sep-2019 17:00:20 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 18:59:57 UTC] PHP Warning:  getimagesize(): Filename cannot be empty in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 60
+[09-Sep-2019 18:59:57 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 20:34:05 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 20:53:05 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 21:01:11 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 21:19:08 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 21:23:35 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 21:33:45 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 21:37:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ingbio/public_html/app/extensiones/firma/firmaimg/signature-to-image.php on line 58
+[09-Sep-2019 22:20:51 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 187
+[09-Sep-2019 22:20:51 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 189
+[09-Sep-2019 22:26:51 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[09-Sep-2019 22:56:19 UTC] PHP Warning:  mkdir(): File exists in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 73
+[10-Sep-2019 16:55:49 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ingbio/public_html/app/modelos/cronograma.modelo.php on line 418
+[10-Sep-2019 16:55:49 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 733
+[10-Sep-2019 16:55:49 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 734
+[10-Sep-2019 17:28:42 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/ingbio/public_html/app/modelos/cronograma.modelo.php on line 418
+[10-Sep-2019 17:28:42 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 733
+[10-Sep-2019 17:28:42 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ingbio/public_html/app/controladores/mantenimiento.controlador.php on line 734

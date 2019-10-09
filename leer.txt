@@ -1,0 +1,20 @@
+Esta aplicacion es de la fecha 10-01-2019
+Esta un 90% terminada, falta el cronograma(CRUD) , arreglar el actualizar usuario(Contraseña
+con caracteres), arreglar el pdf y en el reporte cronograma que cargue la firma bien.
+Nota: tambien falta que cargue dinamicamente las tablas.
+segunda subida 12-01-2019
+esta todos los puntos realizados(los de arriba) falta el arreglar un poco el pdf y las tablas
+dinamicamente y que el eliminar mantenimiento elimine bien la carpeta y la firma que no la descargue si no que la cargue
+automaticamente. pero esta todo realizado(95%)
+Tercera subida 12-01-2019
+todo ok. falta la firma y los filtros de los equipos.
+210119
+Todo listo, faltan detalles de cuando se escoje un equipo repetido quitar el mensaje automaticamente
+y el tamaño de la firma(Si se puede cambiar el color tambien
+) y como tarea las tablas dinamicas.
+
+240119
+Pagina terminada, 
+
+22052019(Ultima Actualizacion)
+Pagina 100% Terminada

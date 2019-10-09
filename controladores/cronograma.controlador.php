@@ -492,14 +492,15 @@ class ControladorCronograma
 
 
 	/*=============================================
-	DESCARGAR EXCEL 2019
+	DESCARGAR EXCEL
 	=============================================*/ 
  
 	static public function ctrDescargarReporteCronograma(){
  
 		if(isset($_GET["reporte12"]) && $_GET["session"] == ""){
  
-			$tabla50 = "cronograma";
+			
+		    $tabla50 = "cronograma";
 
 			$item50 = null;
 
@@ -533,7 +534,7 @@ class ControladorCronograma
 			header("Pragma: public"); 
 			header('Content-Disposition:; filename="'.$Name.'"');
 			header("Content-Transfer-Encoding: binary");
-
+			
 			echo utf8_decode("<table border='0'> 
 					<tr> 
 					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2019</td> 						
@@ -546,8 +547,9 @@ class ControladorCronograma
 		 				</tr>";
 
 			echo utf8_decode("<table border='0'> 
+
 					<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
+					
 					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
@@ -567,8 +569,8 @@ class ControladorCronograma
 					<td style='font-weight:bold; border:1px solid #eee;'>NOVIEMBRE</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>DICIEMBRE</td>							
 					</tr>");
-
-
+					
+			
 			foreach ($mantenimiento as $key => $item25) {
 
 				$perfil = null;
@@ -587,7 +589,7 @@ class ControladorCronograma
 				// $cronogramaCodigo = ModeloCronograma::mdlMostrarCronograma($tabla1, $item1, $valor1,$select);
 				echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
+                        
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
@@ -719,12 +721,9 @@ class ControladorCronograma
                 //$perfil2 = "serie";
                 //$reportessi = ControladorMantenimiento::ctrMostrarModelos($item2, $valor,$orden,$perfil2);
 
-
-                
-
 			 echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
+                        
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
@@ -922,7 +921,6 @@ class ControladorCronograma
 
 		}else if(isset($_GET["reporte12"]) && $_GET["session"] != ""){
 
-
 			$tabla50 = "cronograma";
 
 			$item50 = null;
@@ -930,7 +928,7 @@ class ControladorCronograma
 			$valor50 =  $_GET["session"]; 
 
 			$select50 = "cliente";
-
+			
 			$select51 = "tiempo";
 
 			$valor51 =  "2019";
@@ -962,7 +960,7 @@ class ControladorCronograma
 			header("Pragma: public"); 
 			header('Content-Disposition:; filename="'.$Name.'"');
 			header("Content-Transfer-Encoding: binary");
-
+			
 			echo utf8_decode("<table border='0'> 
 					<tr> 
 					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2019</td> 						
@@ -977,7 +975,7 @@ class ControladorCronograma
 			echo utf8_decode("<table border='0'> 
 			
 			<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
+					
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>MARCA</td>
@@ -997,7 +995,8 @@ class ControladorCronograma
 					<td style='font-weight:bold; border:1px solid #eee;'>DICIEMBRE</td>
 
 					</tr>");
-
+					
+					
 					foreach ($mantenimiento as $key => $item25) {
 
 				$perfil = null;
@@ -1006,7 +1005,7 @@ class ControladorCronograma
 				
 				echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
+                        
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["marca"]."</td> 
@@ -1114,6 +1113,7 @@ class ControladorCronograma
 		 				</tr>";
 			}
 					
+					
 					foreach ($cronograma as $row => $item){
 					    
 					    $perfil = null;
@@ -1133,7 +1133,7 @@ class ControladorCronograma
 				        
 				        echo utf8_decode("<tr>
 
-			 			<td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
+			 			
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["marca_re"]."</td> 
@@ -1377,9 +1377,9 @@ class ControladorCronograma
 		}
 
 	}
-
-
-
+	
+	
+	
 	/*=============================================
 	DESCARGAR EXCEL 2020
 	=============================================*/ 
@@ -1436,7 +1436,6 @@ class ControladorCronograma
 
 			echo utf8_decode("<table border='0'> 
 					<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
@@ -1476,7 +1475,6 @@ class ControladorCronograma
 				// $cronogramaCodigo = ModeloCronograma::mdlMostrarCronograma($tabla1, $item1, $valor1,$select);
 				echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
@@ -1613,7 +1611,6 @@ class ControladorCronograma
 
 			 echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
@@ -1819,16 +1816,22 @@ class ControladorCronograma
 			$valor50 =  $_GET["session"]; 
 
 			$select50 = "cliente";
+			
+			$select51 = "tiempo";
 
-			$mantenimiento = ModeloCronograma::mdlMostrarCronograma($tabla50,$item50,$valor50,$select50);
+			$valor51 =  "2020";
+
+			$mantenimiento = ModeloCronograma::mdlMostrarCronogramaExcelUsuarios($tabla50,$item50,$valor50,$select50,$select51,$valor51);
 			
             $tabla = "reportes";
 			$item = null;
 			$valor = $_GET["session"]; 
 			$orden = null;
 			$perfil = "id_clinica";
+			$perfil52 = "tiempo";
+			$valor52 =  "2020";
 			
-			$cronograma = ModeloMantenimiento::mdlMostrarMantenimiento($tabla, $item, $valor, $orden,$perfil);
+			$cronograma = ModeloMantenimiento::mdlMostrarMantenimientoExcelUsuarios($tabla, $item, $valor, $orden,$perfil,$perfil52,$valor52);
 
 			/*=============================================
 			CREAMOS EL ARCHIVO DE EXCEL
@@ -1860,7 +1863,6 @@ class ControladorCronograma
 			echo utf8_decode("<table border='0'> 
 			
 			<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>MARCA</td>
@@ -1889,7 +1891,6 @@ class ControladorCronograma
 				
 				echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["marca"]."</td> 
@@ -2016,7 +2017,6 @@ class ControladorCronograma
 				        
 				        echo utf8_decode("<tr>
 
-			 			<td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["marca_re"]."</td> 
@@ -2227,13 +2227,13 @@ class ControladorCronograma
  
 	static public function ctrDescargarReporteCronograma2021(){
  
-		if(isset($_GET["reporte12"]) && $_GET["session"] == ""){
+		if(isset($_GET["reporte14"]) && $_GET["session"] == ""){
  
 			$tabla50 = "cronograma";
 
 			$item50 = null;
 
-			$valor50 = "2019"; 
+			$valor50 = "2021"; 
 
 			$select50 = "tiempo";
 
@@ -2241,7 +2241,7 @@ class ControladorCronograma
 
 			$tabla = "reportes";
 			$item = null;
-			$valor = "2019";
+			$valor = "2021";
 			$orden = null;
 			$perfil = "tiempo";
 
@@ -2252,7 +2252,7 @@ class ControladorCronograma
 			CREAMOS EL ARCHIVO DE EXCEL
 			=============================================*/
 
-			$Name = $_GET["reporte12"].'.xls';
+			$Name = $_GET["reporte14"].'.xls';
 
 			header('Expires: 0');
 			header('Cache-control: private');
@@ -2266,7 +2266,7 @@ class ControladorCronograma
 
 			echo utf8_decode("<table border='0'> 
 					<tr> 
-					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2019</td> 						
+					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2021</td> 						
 					</tr>");
 
 			echo utf8_decode("<tr>
@@ -2277,7 +2277,6 @@ class ControladorCronograma
 
 			echo utf8_decode("<table border='0'> 
 					<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CLIENTE</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
@@ -2317,7 +2316,6 @@ class ControladorCronograma
 				// $cronogramaCodigo = ModeloCronograma::mdlMostrarCronograma($tabla1, $item1, $valor1,$select);
 				echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
@@ -2454,7 +2452,6 @@ class ControladorCronograma
 
 			 echo utf8_decode("<tr>
                         
-                        <td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$cliente["nombre"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
@@ -2660,22 +2657,28 @@ class ControladorCronograma
 			$valor50 =  $_GET["session"]; 
 
 			$select50 = "cliente";
+			
+			$select51 = "tiempo";
 
-			$mantenimiento = ModeloCronograma::mdlMostrarCronograma($tabla50,$item50,$valor50,$select50);
+			$valor51 =  "2021";
+
+			$mantenimiento = ModeloCronograma::mdlMostrarCronogramaExcelUsuarios($tabla50,$item50,$valor50,$select50,$select51,$valor51);
 			
             $tabla = "reportes";
 			$item = null;
 			$valor = $_GET["session"]; 
 			$orden = null;
 			$perfil = "id_clinica";
+			$perfil52 = "tiempo";
+			$valor52 =  "2021";
 			
-			$cronograma = ModeloMantenimiento::mdlMostrarMantenimiento($tabla, $item, $valor, $orden,$perfil);
+			$cronograma = ModeloMantenimiento::mdlMostrarMantenimientoExcelUsuarios($tabla, $item, $valor, $orden,$perfil,$perfil52,$valor52);
 
 			/*=============================================
 			CREAMOS EL ARCHIVO DE EXCEL
 			=============================================*/
 			
-			$Name = $_GET["reporte12"].'.xls';
+			$Name = $_GET["reporte14"].'.xls';
 
 			header('Expires: 0');
 			header('Cache-control: private');
@@ -2689,7 +2692,7 @@ class ControladorCronograma
 
 			echo utf8_decode("<table border='0'> 
 					<tr> 
-					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2019</td> 						
+					<td style='font-weight:bold; border:1px solid #eee; font-size:18px;'>AÑO  2021</td> 						
 					</tr>");
 
 			echo utf8_decode("<tr>
@@ -2701,7 +2704,6 @@ class ControladorCronograma
 			echo utf8_decode("<table border='0'> 
 			
 			<tr> 
-					<td style='font-weight:bold; border:1px solid #eee;'>AÑO</td> 
 					<td style='font-weight:bold; border:1px solid #eee;'>CÓDIGO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>EQUIPO</td>
 					<td style='font-weight:bold; border:1px solid #eee;'>MARCA</td>
@@ -2729,8 +2731,7 @@ class ControladorCronograma
 				$cliente = ControladorUsuarios::ctrMostrarUsuarios("id", $item25["cliente"],$perfil);
 				
 				echo utf8_decode("<tr>
-                        
-                        <td style='border:1px solid #eee;'>".$item25["tiempo"]."</td>
+    
 			 			<td style='border:1px solid #eee;'>".$item25["codigo2"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["equipo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item25["marca"]."</td> 
@@ -2857,7 +2858,6 @@ class ControladorCronograma
 				        
 				        echo utf8_decode("<tr>
 
-			 			<td style='border:1px solid #eee;'>".$cronogramaCodigo["tiempo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["codigo"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["equipo_re"]."</td>
 			 			<td style='border:1px solid #eee;'>".$item["marca_re"]."</td> 
@@ -3057,7 +3057,6 @@ class ControladorCronograma
 		}
 
 	}
-
 
 
 
